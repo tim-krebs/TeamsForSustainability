@@ -1,0 +1,52 @@
+{
+    "solution": {
+        "provisionSucceeded": true,
+        "needCreateResourceGroup": false,
+        "resourceNameSuffix": "acbb12",
+        "resourceGroupName": "TeamsForSustainability",
+        "tenantId": "7e3ce760-3aec-4c66-9840-5ff5b738734f",
+        "subscriptionId": "14f59692-20f3-41b5-9645-c9ebc0a8626d",
+        "subscriptionName": "Visual Studio Enterprise Subscription",
+        "location": "West Europe",
+        "teamsAppTenantId": "7e3ce760-3aec-4c66-9840-5ff5b738734f"
+    },
+    "fx-resource-frontend-hosting": {
+        "domain": "teamsforsudev0c1b31tab.z6.web.core.windows.net",
+        "endpoint": "https://teamsforsudev0c1b31tab.z6.web.core.windows.net",
+        "indexPath": "/index.html#",
+        "storageResourceId": "/subscriptions/14f59692-20f3-41b5-9645-c9ebc0a8626d/resourceGroups/TeamsForSustainability/providers/Microsoft.Storage/storageAccounts/teamsforsudev0c1b31tab"
+    },
+    "fx-resource-identity": {
+        "identityName": "teamsforsudev0c1b31",
+        "identityResourceId": "/subscriptions/14f59692-20f3-41b5-9645-c9ebc0a8626d/resourceGroups/TeamsForSustainability/providers/Microsoft.ManagedIdentity/userAssignedIdentities/teamsforsudev0c1b31",
+        "identityClientId": "9eef0b48-f27a-4312-bb5f-f09f2916f545"
+    },
+    "fx-resource-aad-app-for-teams": {
+        "clientId": "e0c30289-5712-4c5a-a9a2-b07774b21e7c",
+        "objectId": "39b8443f-16a1-464b-9e1f-7e285899cabe",
+        "oauth2PermissionScopeId": "474b2ac5-ccc6-46b5-8fa1-dad630d1eb23",
+        "tenantId": "7e3ce760-3aec-4c66-9840-5ff5b738734f",
+        "oauthHost": "https://login.microsoftonline.com",
+        "oauthAuthority": "https://login.microsoftonline.com/7e3ce760-3aec-4c66-9840-5ff5b738734f",
+        "applicationIdUris": "api://teamsforsudev0c1b31tab.z6.web.core.windows.net/e0c30289-5712-4c5a-a9a2-b07774b21e7c",
+        "clientSecret": "{{fx-resource-aad-app-for-teams.clientSecret}}",
+        "frontendEndpoint": "https://teamsforsudev0c1b31tab.z6.web.core.windows.net"
+    },
+    "fx-resource-appstudio": {
+        "teamsAppId": "c925bc22-105e-475c-8aed-da23bfae40c1",
+        "teamsAppUpdatedAt": 1654609564117,
+        "tenantId": "7e3ce760-3aec-4c66-9840-5ff5b738734f"
+    },
+    "fx-resource-function": {
+        "functionAppResourceId": "/subscriptions/14f59692-20f3-41b5-9645-c9ebc0a8626d/resourceGroups/TeamsForSustainability/providers/Microsoft.Web/sites/teamsforsudev0c1b31api",
+        "functionEndpoint": "https://teamsforsudev0c1b31api.azurewebsites.net"
+    },
+    "fx-resource-azure-sql": {
+        "admin": "TSFAdmin",
+        "sqlResourceId": "/subscriptions/14f59692-20f3-41b5-9645-c9ebc0a8626d/resourceGroups/TeamsForSustainability/providers/Microsoft.Sql/servers/teamsforsudev0c1b31",
+        "sqlEndpoint": "teamsforsudev0c1b31.database.windows.net",
+        "databaseName": "teamsforsudev0c1b31"
+    },
+    "fx-resource-cicd": {},
+    "fx-resource-api-connector": {}
+}

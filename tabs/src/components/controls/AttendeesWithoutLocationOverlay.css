@@ -1,0 +1,8 @@
+.attendeesHeader {
+    margin-top: 0px;
+    margin-bottom: 3px;
+}
+
+.attendeesContainer {
+    display: flex;
+}

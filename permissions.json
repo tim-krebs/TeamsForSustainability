@@ -1,0 +1,18 @@
+[
+    {
+        "_comment": "Add manually: OnlineMeetingArtifact.Read.All https://github.com/OfficeDev/TeamsFx/issues/4514",
+        "resource": "Microsoft Graph",
+        "delegated": [
+            "User.Read",
+            "User.Read.All",
+            "Calendars.Read",
+            "Chat.Read",
+            "Calendars.ReadWrite",
+            "OnlineMeetings.Read", "OnlineMeetings.ReadWrite",
+            "AppCatalog.Submit", "AppCatalog.Read.All", "AppCatalog.ReadWrite.All", "Directory.Read.All", "Directory.ReadWrite.All",
+            "TeamsAppInstallation.ReadWriteSelfForChat", "TeamsAppInstallation.ReadWriteForChat",
+            "TeamsTab.Create", "TeamsTab.ReadWriteForChat", "TeamsTab.ReadWrite.All"
+        ],
+        "application": []
+    }
+]

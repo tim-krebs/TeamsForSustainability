@@ -1,0 +1,56 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+variables:
+  M365_ACCOUNT_NAME: ${M365_ACCOUNT_NAME}
+  M365_ACCOUNT_PASSWORD: ${M365_ACCOUNT_PASSWORD}
+  M365_TENANT_ID: ${M365_TENANT_ID}
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+ 
+- task: NodeTool@0
+  inputs:
+    versionSpec: '14.x'
+    checkLatest: true
+  displayName: "install Node.js"
+  
+- script: |
+    npm install
+    cd tabs && npm ci && npm run build:teamsfx:dev && cd -
+  displayName: "npm install and build"
+
+- script: |
+    npm install -g @microsoft/teamsfx-cli # see https://github.com/OfficeDev/TeamsFx/issues/3753
+  displayName: "npm install teamsfx-cli"
+
+#- script: |
+#    teamsfx account login M365 
+#  displayName: "Login to M365"
+
+- script: |
+    teamsfx package --env dev --interactive false
+  displayName: "Package Teams metadata "
+
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: '$(build.SourcesDirectory)/build/appPackage/'
+    Contents: '**'
+    TargetFolder: '$(build.artifactstagingdirectory)'
+  displayName: "Copy files to drop folder"
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+  displayName: "Publish build artifacts"  
+
+
+

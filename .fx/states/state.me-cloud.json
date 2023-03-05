@@ -1,0 +1,51 @@
+{
+    "solution": {
+        "teamsAppTenantId": "d4a2ff9d-d46b-4616-8508-f7dfe6d3b433",
+        "subscriptionId": "26891473-bf7c-41ab-9684-867440ee8165",
+        "subscriptionName": "Visual Studio Enterprise",
+        "tenantId": "d4a2ff9d-d46b-4616-8508-f7dfe6d3b433",
+        "needCreateResourceGroup": false,
+        "resourceGroupName": "teamsustainability",
+        "location": "West Europe",
+        "resourceNameSuffix": "2a216d",
+        "provisionSucceeded": true
+    },
+    "fx-resource-appstudio": {
+        "tenantId": "d4a2ff9d-d46b-4616-8508-f7dfe6d3b433",
+        "teamsAppId": "8b3a5574-c0d2-48dd-aa10-699f1a603bc8",
+        "teamsAppUpdatedAt": 1649677625165
+    },
+    "fx-resource-identity": {
+        "identityName": "teamsustainability",
+        "identityResourceId": "/subscriptions/26891473-bf7c-41ab-9684-867440ee8165/resourceGroups/teamsustainability/providers/Microsoft.ManagedIdentity/userAssignedIdentities/teamsustainability",
+        "identityClientId": "f21c02e9-ca13-496f-858d-c931844ab26e"
+    },
+    "fx-resource-aad-app-for-teams": {
+        "clientId": "90fb05c8-05a6-49c7-ae0f-ac2759903de2",
+        "clientSecret": "",
+        "objectId": "c3a3e3e9-cfec-4f05-ac5a-b63ef532b88a",
+        "oauth2PermissionScopeId": "0a2453ba-a2d6-45f8-8429-84380b20a224",
+        "tenantId": "d4a2ff9d-d46b-4616-8508-f7dfe6d3b433",
+        "oauthHost": "https://login.microsoftonline.com",
+        "oauthAuthority": "https://login.microsoftonline.com/d4a2ff9d-d46b-4616-8508-f7dfe6d3b433",
+        "applicationIdUris": "api://teamsustainabilitytab.z6.web.core.windows.net/90fb05c8-05a6-49c7-ae0f-ac2759903de2"
+    },
+    "fx-resource-function": {
+        "functionAppResourceId": "/subscriptions/26891473-bf7c-41ab-9684-867440ee8165/resourceGroups/teamsustainability/providers/Microsoft.Web/sites/teamsustainabilityapi",
+        "functionEndpoint": "https://teamsustainabilityapi.azurewebsites.net"
+    },
+    "fx-resource-frontend-hosting": {
+        "domain": "teamsustainabilitytab.z6.web.core.windows.net",
+        "endpoint": "https://teamsustainabilitytab.z6.web.core.windows.net",
+        "indexPath": "/index.html#",
+        "storageResourceId": "/subscriptions/26891473-bf7c-41ab-9684-867440ee8165/resourceGroups/teamsustainability/providers/Microsoft.Storage/storageAccounts/teamsustainabilitytab"
+    },
+    "fx-resource-azure-sql": {
+        "admin": "teamsustainability",
+        "sqlResourceId": "/subscriptions/26891473-bf7c-41ab-9684-867440ee8165/resourceGroups/teamsustainability/providers/Microsoft.Sql/servers/teamsustainability",
+        "sqlEndpoint": "teamsustainability.database.windows.net",
+        "databaseName": "teamsustainability"
+    },
+    "fx-resource-cicd": {},
+    "fx-resource-api-connector": {}
+}
